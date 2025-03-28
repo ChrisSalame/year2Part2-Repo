@@ -31,7 +31,7 @@ namespace NodeCanvas.Tasks.Actions {
 			{
 				float cappedX = velocity.value.x / groundSpeed * maxGroundSpeed.value;
 				float cappedZ = velocity.value.z / groundSpeed * maxGroundSpeed.value;
-				velocity = new Vector3(cappedX, velocity.value.y, cappedZ);
+				velocity.value = new Vector3(cappedX, velocity.value.y, cappedZ);
 			}
 			agent.transform.position += velocity.value * Time.deltaTime;
 
