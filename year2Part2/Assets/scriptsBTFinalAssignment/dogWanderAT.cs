@@ -7,7 +7,7 @@ namespace NodeCanvas.Tasks.Actions {
 
 	public class dogWanderAT : ActionTask {
 
-
+		public BBParameter<float> dogEnergy;
 
         public BBParameter<float> dogSpeed;
 
@@ -47,12 +47,14 @@ namespace NodeCanvas.Tasks.Actions {
 
 
             acceleration.value += currentAccelerationDirection.normalized * Time.deltaTime * dogSpeed.value;
+            dogEnergy.value -= 2 * Time.deltaTime;
             EndAction(true);
 
 		}
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
+			
 			
 		}
 
