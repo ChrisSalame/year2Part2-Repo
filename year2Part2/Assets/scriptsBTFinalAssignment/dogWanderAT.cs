@@ -1,5 +1,6 @@
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -10,6 +11,10 @@ namespace NodeCanvas.Tasks.Actions {
 		public BBParameter<float> dogEnergy;
 
         public BBParameter<float> dogSpeed;
+        public BBParameter<float> sleep;  
+        public BBParameter<Transform> dogHouse;
+
+
 
         public float wanderSampleFrequency;
         public float wanderDirectionChangeFrequency;
@@ -24,7 +29,9 @@ namespace NodeCanvas.Tasks.Actions {
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
         protected override string OnInit() {
-			return null;
+
+
+            return null;
 		}
 
 		//This is called once each time the task is enabled.
@@ -48,15 +55,22 @@ namespace NodeCanvas.Tasks.Actions {
 
             acceleration.value += currentAccelerationDirection.normalized * Time.deltaTime * dogSpeed.value;
             dogEnergy.value -= 2 * Time.deltaTime;
+
+            float distanceToHouse = Vector3.Distance(agent.transform.position, dogHouse.value.position);
+            if (dogEnergy.value <= 0)
+            {
+                sleep.value = 10 + distanceToHouse;
+            }
+            Debug.Log(distanceToHouse);
+
             EndAction(true);
 
 		}
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
-			
-			
-		}
+
+        }
 
 		//Called when the task is disabled.
 		protected override void OnStop() {

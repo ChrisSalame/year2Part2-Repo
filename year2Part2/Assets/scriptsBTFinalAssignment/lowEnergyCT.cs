@@ -10,16 +10,12 @@ namespace NodeCanvas.Tasks.Conditions {
 	public class lowEnergyCT : ConditionTask {
 
         public BBParameter<float> dogEnergy;
-		public BBParameter<float> sleep;
-		public BBParameter<Transform> dogHouse;
+
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
         protected override string OnInit(){
 
-			float distanceToHouse = Vector3.Distance(agent.transform.position, dogHouse.value.position);
-            sleep.value = 10 + distanceToHouse;
-            Debug.Log(distanceToHouse);
 
             return null;
 		}

@@ -30,7 +30,7 @@ namespace NodeCanvas.Tasks.Actions {
 
 			if (sleep.value <= 0) 
 			{
-				dogEnergy.value = 50;
+				dogEnergy.value = 10;
 			}
 			EndAction(true);
 			
