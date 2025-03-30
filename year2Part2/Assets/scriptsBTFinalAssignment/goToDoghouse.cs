@@ -8,7 +8,7 @@ namespace NodeCanvas.Tasks.Actions {
 	public class goToDoghouse : ActionTask {
 
 		public BBParameter<float> dogSpeed;
-		public Transform dogHouse;
+		public BBParameter<Transform> dogHouse;
 
 		//Use for initialization. This is called only once in the lifetime of the task.
 		//Return null if init was successfull. Return an error string otherwise
@@ -21,9 +21,8 @@ namespace NodeCanvas.Tasks.Actions {
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
 
-            Vector3 directionToMove = (dogHouse.position - agent.transform.position);
+            Vector3 directionToMove = (dogHouse.value.position - agent.transform.position);
             agent.transform.position += directionToMove.normalized * dogSpeed.value * Time.deltaTime;
-
             EndAction(true);
 		}
 

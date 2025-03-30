@@ -8,8 +8,6 @@ namespace NodeCanvas.Tasks.Conditions {
 	public class lowEnergyCT : ConditionTask {
 
         public BBParameter<float> dogEnergy;
-        public BBParameter<Transform> currentTarget;
-		public Transform dogHouse;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
@@ -31,12 +29,15 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
 
-			if (dogEnergy.value <= 0) 
+			if (dogEnergy.value <= 0)
 			{
-				currentTarget = dogHouse;
+				return true;
+			}
+			else 
+			{
+				return false;
 			}
 
-			return true;
 		}
 	}
 }
