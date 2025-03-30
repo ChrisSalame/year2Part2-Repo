@@ -514,7 +514,7 @@ Transform:
   m_GameObject: {fileID: 1135918749}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 1, z: -0.52}
+  m_LocalPosition: {x: 0.15, y: 1, z: -7.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":385.3305,"y":80.33316},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"0"},{"_position":{"x":274.0,"y":205.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"1"},{"_condition":{"playerChar":{"_name":"playerChar","_targetVariableID":"c7db15ac-faa9-4e5d-a4ca-66e49175c556"},"radius":3.0,"$type":"NodeCanvas.Tasks.Conditions.playerInRangeCT"},"_position":{"x":159.0,"y":320.0},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"2"},{"_action":{"playerChar":{"_name":"playerChar","_targetVariableID":"c7db15ac-faa9-4e5d-a4ca-66e49175c556"},"dogSpeed":{"_name":"dogSpeed","_targetVariableID":"b5519de9-e40e-445c-afe9-9fca3cb1fdd7"},"$type":"NodeCanvas.Tasks.Actions.goToPlayerAT"},"_position":{"x":316.0005,"y":319.6668},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"dynamic":true,"_position":{"x":539.0,"y":213.0},"$type":"NodeCanvas.BehaviourTrees.Parallel","$id":"4"},{"_action":{"velocity":{"_name":"Velocity","_targetVariableID":"4820109c-e7a8-4156-b89a-ec8b91125822"},"acceleration":{"_name":"acceleration","_targetVariableID":"85cdf19e-6546-4487-b994-fdbcd451673c"},"maxGroundSpeed":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.NavigateAT"},"_position":{"x":484.0,"y":300.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"5"},{"_action":{"dogSpeed":{"_name":"dogSpeed","_targetVariableID":"b5519de9-e40e-445c-afe9-9fca3cb1fdd7"},"wanderSampleFrequency":1.5,"wanderDirectionChangeFrequency":3.0,"acceleration":{"_name":"acceleration","_targetVariableID":"85cdf19e-6546-4487-b994-fdbcd451673c"},"$type":"NodeCanvas.Tasks.Actions.dogWanderAT"},"_position":{"x":598.5146,"y":298.5812},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"6"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{"playerChar":{"_value":1,"_name":"playerChar","_id":"c7db15ac-faa9-4e5d-a4ca-66e49175c556","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
+  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":385.3305,"y":80.33316},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"0"},{"_position":{"x":274.0,"y":205.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"1"},{"_condition":{"playerChar":{"_name":"playerChar","_targetVariableID":"c7db15ac-faa9-4e5d-a4ca-66e49175c556"},"radius":3.0,"$type":"NodeCanvas.Tasks.Conditions.playerInRangeCT"},"_position":{"x":159.0,"y":320.0},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"2"},{"_action":{"playerChar":{"_name":"playerChar","_targetVariableID":"c7db15ac-faa9-4e5d-a4ca-66e49175c556"},"dogSpeed":{"_name":"dogSpeed","_targetVariableID":"b5519de9-e40e-445c-afe9-9fca3cb1fdd7"},"$type":"NodeCanvas.Tasks.Actions.goToPlayerAT"},"_position":{"x":316.0005,"y":319.6668},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"dynamic":true,"_position":{"x":539.0,"y":213.0},"$type":"NodeCanvas.BehaviourTrees.Parallel","$id":"4"},{"_action":{"velocity":{"_name":"Velocity","_targetVariableID":"4820109c-e7a8-4156-b89a-ec8b91125822"},"acceleration":{"_name":"acceleration","_targetVariableID":"85cdf19e-6546-4487-b994-fdbcd451673c"},"maxGroundSpeed":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.NavigateAT"},"_position":{"x":484.0,"y":301.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"5"},{"_action":{"dogSpeed":{"_name":"dogSpeed","_targetVariableID":"b5519de9-e40e-445c-afe9-9fca3cb1fdd7"},"wanderSampleFrequency":1.5,"wanderDirectionChangeFrequency":3.0,"acceleration":{"_name":"acceleration","_targetVariableID":"85cdf19e-6546-4487-b994-fdbcd451673c"},"$type":"NodeCanvas.Tasks.Actions.dogWanderAT"},"_position":{"x":598.5146,"y":297.5812},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"6"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{"playerChar":{"_value":1,"_name":"playerChar","_id":"c7db15ac-faa9-4e5d-a4ca-66e49175c556","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
@@ -570,7 +570,7 @@ MonoBehaviour:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: -63, y: 102}
+    _translation: {x: 1, y: 114}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
@@ -872,6 +872,50 @@ MonoBehaviour:
   _updateMode: 0
   _graph: {fileID: 0}
   _blackboard: {fileID: 1929616308}
+--- !u!1 &1993124820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1993124822}
+  - component: {fileID: 1993124823}
+  m_Layer: 0
+  m_Name: centrePull
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1993124822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993124820}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1993124823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993124820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1309958b7b5bac46abdb209d7d2fe6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -883,3 +927,4 @@ SceneRoots:
   - {fileID: 1135918753}
   - {fileID: 1229997771}
   - {fileID: 1374453937}
+  - {fileID: 1993124822}
