@@ -29,9 +29,11 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
 
+
 			if (dogEnergy.value <= 0)
 			{
-				return true;
+				Debug.Log("energy below 0");
+				return true;	
 			}
 			else 
 			{
