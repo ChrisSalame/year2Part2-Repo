@@ -222,7 +222,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 12, y: 1, z: 12}
+  m_LocalScale: {x: 15, y: 1, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -565,17 +565,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":374.6717,"y":9.718691},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"0"},{"_position":{"x":-125.3593,"y":192.9622},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"1"},{"_condition":{"dogEnergy":{"_name":"dogEnergy","_targetVariableID":"e2c28bdc-47a1-453c-a6f8-aee240cc32fb"},"$type":"NodeCanvas.Tasks.Conditions.lowEnergyCT"},"_position":{"x":-273.3591,"y":294.9621},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"2"},{"_action":{"dogSpeed":{"_name":"dogSpeed","_targetVariableID":"b5519de9-e40e-445c-afe9-9fca3cb1fdd7"},"dogHouse":{"_name":"dogHouse","_targetVariableID":"913e786e-fa36-483e-87c6-26c21a7fc617"},"$type":"NodeCanvas.Tasks.Actions.goToDoghouse"},"_position":{"x":-142.3593,"y":295.9621},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_action":{"dogEnergy":{"_name":"dogEnergy","_targetVariableID":"e2c28bdc-47a1-453c-a6f8-aee240cc32fb"},"$type":"NodeCanvas.Tasks.Actions.dogSleepAT"},"_position":{"x":-0.9853741,"y":294.7148},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"4"},{"_position":{"x":372.0089,"y":223.9941},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"5"},{"_condition":{"playerChar":{"_name":"playerChar","_targetVariableID":"c7db15ac-faa9-4e5d-a4ca-66e49175c556"},"radius":5.0,"$type":"NodeCanvas.Tasks.Conditions.playerInRangeCT"},"_position":{"x":207.0089,"y":338.9941},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"6"},{"_action":{"playerChar":{"_name":"playerChar","_targetVariableID":"c7db15ac-faa9-4e5d-a4ca-66e49175c556"},"dogSpeed":{"_name":"dogSpeed","_targetVariableID":"b5519de9-e40e-445c-afe9-9fca3cb1fdd7"},"$type":"NodeCanvas.Tasks.Actions.goToPlayerAT"},"_position":{"x":355.0094,"y":339.6609},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"7"},{"policy":1,"dynamic":true,"_position":{"x":769.576,"y":209.6647},"$type":"NodeCanvas.BehaviourTrees.Parallel","$id":"8"},{"_action":{"velocity":{"_name":"Velocity","_targetVariableID":"4820109c-e7a8-4156-b89a-ec8b91125822"},"acceleration":{"_name":"acceleration","_targetVariableID":"85cdf19e-6546-4487-b994-fdbcd451673c"},"maxGroundSpeed":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.NavigateAT"},"_position":{"x":708.576,"y":309.6647},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"9"},{"_action":{"dogEnergy":{"_name":"dogEnergy","_targetVariableID":"e2c28bdc-47a1-453c-a6f8-aee240cc32fb"},"dogSpeed":{"_name":"dogSpeed","_targetVariableID":"b5519de9-e40e-445c-afe9-9fca3cb1fdd7"},"wanderSampleFrequency":1.5,"wanderDirectionChangeFrequency":1.0,"acceleration":{"_name":"acceleration","_targetVariableID":"85cdf19e-6546-4487-b994-fdbcd451673c"},"$type":"NodeCanvas.Tasks.Actions.dogWanderAT"},"_position":{"x":829.0906,"y":305.2459},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"10"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{"playerChar":{"_value":1,"_name":"playerChar","_id":"c7db15ac-faa9-4e5d-a4ca-66e49175c556","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"dogHouse":{"_name":"dogHouse","_id":"913e786e-fa36-483e-87c6-26c21a7fc617","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
+  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":374.6717,"y":9.718691},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"0"},{"_position":{"x":-125.3593,"y":192.9622},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"1"},{"_condition":{"dogEnergy":{"_name":"dogEnergy","_targetVariableID":"e2c28bdc-47a1-453c-a6f8-aee240cc32fb"},"$type":"NodeCanvas.Tasks.Conditions.lowEnergyCT"},"_position":{"x":-273.3591,"y":294.9621},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"2"},{"_action":{"dogSpeed":{"_name":"dogSpeed","_targetVariableID":"b5519de9-e40e-445c-afe9-9fca3cb1fdd7"},"dogHouse":{"_name":"dogHouse","_targetVariableID":"913e786e-fa36-483e-87c6-26c21a7fc617"},"$type":"NodeCanvas.Tasks.Actions.goToDoghouse"},"_position":{"x":-142.3593,"y":295.9621},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_action":{"dogEnergy":{"_name":"dogEnergy","_targetVariableID":"e2c28bdc-47a1-453c-a6f8-aee240cc32fb"},"$type":"NodeCanvas.Tasks.Actions.dogSleepAT"},"_position":{"x":-7.985367,"y":299.048},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"4"},{"_position":{"x":372.0089,"y":223.9941},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"5"},{"_condition":{"playerChar":{"_name":"playerChar","_targetVariableID":"c7db15ac-faa9-4e5d-a4ca-66e49175c556"},"radius":5.0,"$type":"NodeCanvas.Tasks.Conditions.playerInRangeCT"},"_position":{"x":205.0089,"y":326.9941},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"6"},{"_action":{"playerChar":{"_name":"playerChar","_targetVariableID":"c7db15ac-faa9-4e5d-a4ca-66e49175c556"},"dogSpeed":{"_name":"dogSpeed","_targetVariableID":"b5519de9-e40e-445c-afe9-9fca3cb1fdd7"},"$type":"NodeCanvas.Tasks.Actions.goToPlayerAT"},"_position":{"x":358.0094,"y":327.6609},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"7"},{"policy":1,"dynamic":true,"_position":{"x":768.576,"y":209.6647},"$type":"NodeCanvas.BehaviourTrees.Parallel","$id":"8"},{"_action":{"velocity":{"_name":"Velocity","_targetVariableID":"4820109c-e7a8-4156-b89a-ec8b91125822"},"acceleration":{"_name":"acceleration","_targetVariableID":"85cdf19e-6546-4487-b994-fdbcd451673c"},"maxGroundSpeed":{"_value":5.0},"$type":"NodeCanvas.Tasks.Actions.NavigateAT"},"_position":{"x":708.576,"y":309.6647},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"9"},{"_action":{"dogEnergy":{"_name":"dogEnergy","_targetVariableID":"e2c28bdc-47a1-453c-a6f8-aee240cc32fb"},"dogSpeed":{"_name":"dogSpeed","_targetVariableID":"b5519de9-e40e-445c-afe9-9fca3cb1fdd7"},"wanderSampleFrequency":1.5,"wanderDirectionChangeFrequency":1.0,"acceleration":{"_name":"acceleration","_targetVariableID":"85cdf19e-6546-4487-b994-fdbcd451673c"},"$type":"NodeCanvas.Tasks.Actions.dogWanderAT"},"_position":{"x":830.0906,"y":305.2459},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"10"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"8"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{"playerChar":{"_value":1,"_name":"playerChar","_id":"c7db15ac-faa9-4e5d-a4ca-66e49175c556","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"dogHouse":{"_value":2,"_name":"dogHouse","_id":"913e786e-fa36-483e-87c6-26c21a7fc617","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 1929616307}
+  - {fileID: 1229997771}
   _boundGraphSource:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: -173, y: 22}
+    _translation: {x: 18, y: 28}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
@@ -735,6 +736,7 @@ GameObject:
   - component: {fileID: 1929616304}
   - component: {fileID: 1929616309}
   - component: {fileID: 1929616308}
+  - component: {fileID: 1929616310}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -857,7 +859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":496.0,"y":108.0},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"0"},{"_position":{"x":623.0,"y":260.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"1"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.bugSpawnCT"},"_position":{"x":546.0,"y":331.0},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"2"},{"_action":{"insectNoise":{"_name":"insectNoise","_targetVariableID":"b07cca6c-8f2f-4b33-a787-c8afc1cad01b"},"meshRenderer":1,"$type":"NodeCanvas.Tasks.Actions.bugSwarmAT"},"_position":{"x":674.0,"y":330.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{"insectNoise":{"_value":2,"_name":"insectNoise","_id":"b07cca6c-8f2f-4b33-a787-c8afc1cad01b","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.AudioClip,
+  _boundGraphSerialization: '{"type":"NodeCanvas.BehaviourTrees.BehaviourTree","nodes":[{"_position":{"x":517.0,"y":109.0},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"0"},{"_position":{"x":623.0,"y":260.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"1"},{"_condition":{"$type":"NodeCanvas.Tasks.Conditions.bugSpawnCT"},"_position":{"x":546.0,"y":331.0},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"2"},{"_action":{"insectNoise":{"_name":"insectNoise","_targetVariableID":"b07cca6c-8f2f-4b33-a787-c8afc1cad01b"},"meshRenderer":1,"$type":"NodeCanvas.Tasks.Actions.bugSwarmAT"},"_position":{"x":674.0,"y":330.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{"insectNoise":{"_value":2,"_name":"insectNoise","_id":"b07cca6c-8f2f-4b33-a787-c8afc1cad01b","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.AudioClip,
     UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
@@ -867,7 +869,7 @@ MonoBehaviour:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: -169, y: 79}
+    _translation: {x: -196, y: 114}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
@@ -877,6 +879,30 @@ MonoBehaviour:
   _updateMode: 0
   _graph: {fileID: 0}
   _blackboard: {fileID: 1929616308}
+--- !u!114 &1929616310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929616303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d4487f1cfc7d114e9eb271eace75d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parentBlackboard: {fileID: 0}
+  _serializedBlackboard: '{"_variables":{"dirtValue":{"_value":150.0,"_name":"dirtValue","_id":"445bccb9-eec9-41bd-9e8d-3e6f2d3dab31","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+  _objectReferences: []
+  _serializedVariables:
+  - _json: '{"_value":150.0,"_name":"dirtValue","_id":"445bccb9-eec9-41bd-9e8d-3e6f2d3dab31","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  _UID: ae5eda46-4d56-4224-9afa-e6d909bef942
+  _identifier: player
+  _singletonMode: 0
+  _dontDestroyOnLoad: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
