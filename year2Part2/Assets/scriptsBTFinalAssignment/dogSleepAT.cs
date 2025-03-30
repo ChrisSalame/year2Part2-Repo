@@ -8,7 +8,7 @@ namespace NodeCanvas.Tasks.Actions {
 	public class dogSleepAT : ActionTask {
         
 		public BBParameter<float> dogEnergy;
-		private float sleep;
+		public float sleep;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
