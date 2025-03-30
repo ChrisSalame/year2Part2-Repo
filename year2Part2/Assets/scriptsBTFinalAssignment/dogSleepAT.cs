@@ -8,12 +8,12 @@ namespace NodeCanvas.Tasks.Actions {
 	public class dogSleepAT : ActionTask {
         
 		public BBParameter<float> dogEnergy;
-		public float sleep;
+		public BBParameter<float> sleep;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
         protected override string OnInit() {
-			sleep = 10;
+
 			return null;
 		}
 
@@ -26,9 +26,9 @@ namespace NodeCanvas.Tasks.Actions {
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
-			sleep -= 1 * Time.deltaTime;
+			sleep.value -= 1 * Time.deltaTime;
 
-			if (sleep <= 0) 
+			if (sleep.value <= 0) 
 			{
 				dogEnergy.value = 50;
 			}

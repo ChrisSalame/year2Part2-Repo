@@ -1,5 +1,7 @@
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
+using ParadoxNotion.Serialization.FullSerializer;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -8,11 +10,18 @@ namespace NodeCanvas.Tasks.Conditions {
 	public class lowEnergyCT : ConditionTask {
 
         public BBParameter<float> dogEnergy;
+		public BBParameter<float> sleep;
+		public BBParameter<Transform> dogHouse;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
         protected override string OnInit(){
-			return null;
+
+			float distanceToHouse = Vector3.Distance(agent.transform.position, dogHouse.value.position);
+            sleep.value = 10 + distanceToHouse;
+            Debug.Log(distanceToHouse);
+
+            return null;
 		}
 
 		//Called whenever the condition gets enabled.
@@ -32,7 +41,7 @@ namespace NodeCanvas.Tasks.Conditions {
 
 			if (dogEnergy.value <= 0)
 			{
-				Debug.Log("energy below 0");
+				Debug.Log("energy below 0"); 
 				return true;	
 			}
 			else 
