@@ -49,13 +49,15 @@ namespace NodeCanvas.Tasks.Actions {
                 currentAccelerationDirection = new Vector3(randomPoint.x, 0, randomPoint.y);
             }
 
-
             Debug.DrawLine(agent.transform.position, currentAccelerationDirection + agent.transform.position);
 
 
             acceleration.value += currentAccelerationDirection.normalized * Time.deltaTime * dogSpeed.value;
             dogEnergy.value -= 2 * Time.deltaTime;
 
+
+
+            //This has the dogs sleep requirement to be set depending on how far away it is from the doghouse when it runs out of energy
             float distanceToHouse = Vector3.Distance(agent.transform.position, dogHouse.value.position);
             if (dogEnergy.value <= 0)
             {
@@ -67,17 +69,12 @@ namespace NodeCanvas.Tasks.Actions {
 
 		}
 
-		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
 
         }
-
-		//Called when the task is disabled.
 		protected override void OnStop() {
 			
 		}
-
-		//Called when the task is paused.
 		protected override void OnPause() {
 			
 		}
