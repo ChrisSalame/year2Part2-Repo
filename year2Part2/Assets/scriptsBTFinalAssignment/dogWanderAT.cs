@@ -66,7 +66,7 @@ namespace NodeCanvas.Tasks.Actions {
             {
                 sleep.value = 10 + distanceToHouse;
             }
-            Debug.Log(distanceToHouse);
+            //Debug.Log(distanceToHouse);
 
             EndAction(true);
 

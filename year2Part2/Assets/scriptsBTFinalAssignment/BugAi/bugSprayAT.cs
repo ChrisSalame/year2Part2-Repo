@@ -2,19 +2,20 @@ using NodeCanvas.Framework;
 using ParadoxNotion.Design;
 using UnityEngine;
 
+
 namespace NodeCanvas.Tasks.Actions {
 
-	public class bugSwarmAT : ActionTask {
+	public class bugSprayAT : ActionTask {
 
 		public BBParameter<float> digStrength;
+		public BBParameter<bool> bugActive;
 
-		public BBParameter<AudioClip> insectNoise;
         public MeshRenderer meshRenderer;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
         protected override string OnInit() {
-			
+
 			return null;
 		}
 
@@ -23,14 +24,16 @@ namespace NodeCanvas.Tasks.Actions {
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
 
-			BBParameter<AudioClip> insect = insectNoise;
-			Debug.Log("grasshopper sound plays");
+            if (bugActive.value == true)
+            {
+                digStrength.value = 5;
+                bugActive.value = false;
+                meshRenderer.material.color = Color.white;
 
-			digStrength.value = 1;
-			Debug.Log("dig strength now = " + digStrength.value);
+                Debug.Log("bug spray used, effects back to normal");
+            }
 
-            meshRenderer.material.color = Color.green;
-            //EndAction(true);
+            EndAction(true);
 		}
 
 		//Called once per frame while the action is active.

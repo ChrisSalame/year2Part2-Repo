@@ -1,29 +1,26 @@
-using JetBrains.Annotations;
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
-using ParadoxNotion.Serialization.FullSerializer;
 using UnityEngine;
 
 
 namespace NodeCanvas.Tasks.Conditions {
 
-	public class playerDigCT : ConditionTask {
+	public class gameOverCT : ConditionTask {
 
-		public BBParameter<bool> bugActive;
-
-		public int bugSpawnChance;
-		public int bugSpawnRoll;
+		public BBParameter<float> HP;
 
 		//Use for initialization. This is called only once in the lifetime of the task.
 		//Return null if init was successfull. Return an error string otherwise
 		protected override string OnInit(){
+
+			
 			return null;
 		}
 
 		//Called whenever the condition gets enabled.
 		protected override void OnEnable() {
-
-        }
+			
+		}
 
 		//Called whenever the condition gets disabled.
 		protected override void OnDisable() {
@@ -34,27 +31,17 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
 
-            if (Input.GetKeyDown(KeyCode.Space)) 
+			//If the Hp is zero game over
+			if (HP.value <= 0)
 			{
-                bugSpawnRoll = Random.Range(0, 5);
-                Debug.Log("bug roll = " + bugSpawnRoll);
+				Debug.Log("GAME OVER");
 
-                bugSpawnChance = Random.Range(0, 5);
-                Debug.Log("bug Chance = " + bugSpawnChance);
-
-				if (bugSpawnRoll == bugSpawnChance) 
-				{
-					bugActive.value = true;
-					Debug.Log("BUGS SPAWN BUGS SPAWN BUGS SPAWN"); 
-				}
-                return true;
+				return true;
 			}
-			else 
+			else
 			{
-				return false; 
+				return false;
 			}
-
-
 		}
 	}
 }
