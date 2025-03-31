@@ -2,17 +2,17 @@ using NodeCanvas.Framework;
 using ParadoxNotion.Design;
 using UnityEngine;
 
+
 namespace NodeCanvas.Tasks.Actions {
 
-	public class bugSwarmAT : ActionTask {
+	public class dirtValueDecreasesAT : ActionTask {
 
-		public BBParameter<AudioClip> insectNoise;
-        public MeshRenderer meshRenderer;
+		public BBParameter<float> dirtValue;
+		public BBParameter<float> digStrength;
 
-        //Use for initialization. This is called only once in the lifetime of the task.
-        //Return null if init was successfull. Return an error string otherwise
-        protected override string OnInit() {
-			
+		//Use for initialization. This is called only once in the lifetime of the task.
+		//Return null if init was successfull. Return an error string otherwise
+		protected override string OnInit() {
 			return null;
 		}
 
@@ -20,13 +20,9 @@ namespace NodeCanvas.Tasks.Actions {
 		//Call EndAction() to mark the action as finished, either in success or failure.
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
-
-			BBParameter<AudioClip> insect = insectNoise;
-            
-			Debug.Log("grasshopper sound plays");
-
-            meshRenderer.material.color = Color.green;
-            //EndAction(true);
+			dirtValue.value -= digStrength.value; 
+			Debug.Log("you dug in 5 more cm, value is now " + dirtValue.value); 
+			EndAction(true);
 		}
 
 		//Called once per frame while the action is active.

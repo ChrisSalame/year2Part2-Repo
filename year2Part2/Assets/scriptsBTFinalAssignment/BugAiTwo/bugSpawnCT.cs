@@ -7,6 +7,8 @@ namespace NodeCanvas.Tasks.Conditions {
 
 	public class bugSpawnCT : ConditionTask {
 
+		public BBParameter<bool> bugActive;
+
 		//Use for initialization. This is called only once in the lifetime of the task.
 		//Return null if init was successfull. Return an error string otherwise
 		protected override string OnInit(){
@@ -27,9 +29,9 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
 
-			if (Input.GetKeyDown(KeyCode.Space)) 
+			if (bugActive.value == true) 
 			{
-				Debug.Log("space key pressed down");
+				Debug.Log("bugs Spawned");
                 return true;
             }
 			return false;
