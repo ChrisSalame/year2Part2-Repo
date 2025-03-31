@@ -25,6 +25,8 @@ namespace NodeCanvas.Tasks.Actions {
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
+
+			//This allows for naviation to move continously with multiple scripts running
 			velocity.value += acceleration.value;
 			float groundSpeed = Mathf.Sqrt(velocity.value.x * velocity.value.x + velocity.value.z * velocity.value.z);
 			if (maxGroundSpeed.value < groundSpeed)

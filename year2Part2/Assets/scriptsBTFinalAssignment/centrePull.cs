@@ -4,25 +4,30 @@ using UnityEngine;
 
 public class centrePull : MonoBehaviour
 {
-    public float pullForce = 5;
+
+
+    /// <summary>
+    /// This is an unused script, kept for documentation
+    /// </summary>
+    public float pullForce = 0.1f;
     public float distance;
 
-    public Transform dogEnemy;
     public Transform pullPosition;
 
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        distance = Vector3.Distance(dogEnemy.transform.position, transform.position);
+        distance = Vector3.Distance(transform.position, pullPosition.position);
 
-        pullForce = (distance/5);
+        pullForce = distance/5;
 
-        dogEnemy.transform.position = pullForce * pullPosition.position;
+        transform.position = pullForce * pullPosition.position;
 
         Debug.Log(pullForce);
         

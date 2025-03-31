@@ -8,12 +8,11 @@ namespace NodeCanvas.Tasks.Actions {
 
 	public class dogWanderAT : ActionTask {
 
+        //Used for the dogs energy and their speed at which they move
 		public BBParameter<float> dogEnergy;
-
         public BBParameter<float> dogSpeed;
         public BBParameter<float> sleep;  
         public BBParameter<Transform> dogHouse;
-
 
 
         public float wanderSampleFrequency;
@@ -41,6 +40,12 @@ namespace NodeCanvas.Tasks.Actions {
 
 
 
+
+
+
+
+            //Wander code, this has the dog move randomly across the map
+
             timeSinceLastDirectionChange += Time.deltaTime;
             if (timeSinceLastDirectionChange > wanderDirectionChangeFrequency)
             {
@@ -48,12 +53,10 @@ namespace NodeCanvas.Tasks.Actions {
                 timeSinceLastDirectionChange = 0f;
                 currentAccelerationDirection = new Vector3(randomPoint.x, 0, randomPoint.y);
             }
-
             Debug.DrawLine(agent.transform.position, currentAccelerationDirection + agent.transform.position);
-
-
             acceleration.value += currentAccelerationDirection.normalized * Time.deltaTime * dogSpeed.value;
             dogEnergy.value -= 2 * Time.deltaTime;
+
 
 
 
