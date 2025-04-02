@@ -22,22 +22,20 @@ namespace NodeCanvas.Tasks.Actions {
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
 
-			//Insert Player Character Shakes
-
 			HP.value -= 1 * Time.deltaTime;
 		}
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
 
-            wait -= 1 * Time.deltaTime;
+            //wait -= 1 * Time.deltaTime;
 
-            if (wait <= 0)
-            {
-                wait = 5;
+            //if (wait <= 0)
+            //{
+            //    wait = 5;
+            //}
+
                 EndAction(true);
-            }
-
         }
 
 		//Called when the task is disabled.

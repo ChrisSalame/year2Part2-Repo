@@ -37,7 +37,7 @@ namespace NodeCanvas.Tasks.Actions {
                 DirectionChangeTime = 0f;
                 AccelDirection = new Vector3(randPoint.x, 0, randPoint.y);
             }
-            Debug.DrawLine(agent.transform.position, AccelDirection + agent.transform.position);
+            Debug.DrawLine(agent.transform.position, AccelDirection + agent.transform.position, Color.blue);
             acceleration.value += AccelDirection.normalized * Time.deltaTime * charSpeed.value;
             
 			EndAction(true);
