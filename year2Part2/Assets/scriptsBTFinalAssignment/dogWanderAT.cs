@@ -15,7 +15,6 @@ namespace NodeCanvas.Tasks.Actions {
         public BBParameter<Transform> dogHouse;
 
 
-        public float wanderSampleFrequency;
         public float wanderDirectionChangeFrequency;
         public BBParameter<Vector3> acceleration;
 
@@ -37,12 +36,6 @@ namespace NodeCanvas.Tasks.Actions {
 		//Call EndAction() to mark the action as finished, either in success or failure.
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
-
-
-
-
-
-
 
             //Wander code, this has the dog move randomly across the map
 

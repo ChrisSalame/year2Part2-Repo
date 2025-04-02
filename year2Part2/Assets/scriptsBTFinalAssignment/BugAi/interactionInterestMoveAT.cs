@@ -9,10 +9,8 @@ namespace NodeCanvas.Tasks.Actions {
 
 		public BBParameter<Vector3> acceleration;
 		public BBParameter<float> charSpeed;
-		public float wanderFrequency;
+
 		public float directionChange;
-
-
 
         private Vector3 randPoint = Vector3.zero;
         private Vector3 AccelDirection = Vector3.zero;
@@ -31,7 +29,7 @@ namespace NodeCanvas.Tasks.Actions {
 		protected override void OnExecute() {
 
             DirectionChangeTime += Time.deltaTime;
-            if (DirectionChangeTime > wanderFrequency)
+            if (DirectionChangeTime > directionChange)
             {
                 randPoint = Random.insideUnitCircle.normalized;
                 DirectionChangeTime = 0f;
