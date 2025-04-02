@@ -8,6 +8,7 @@ namespace NodeCanvas.Tasks.Actions {
 	public class dogAndBugInteractAT : ActionTask {
 
 		public BBParameter<float> HP;
+		public float wait;
 		
 
 		//Use for initialization. This is called only once in the lifetime of the task.
@@ -23,15 +24,21 @@ namespace NodeCanvas.Tasks.Actions {
 
 			//Insert Player Character Shakes
 
-			HP.value -= 1;
-
-			EndAction(true);
+			HP.value -= 1 * Time.deltaTime;
 		}
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
-			
-		}
+
+            wait -= 1 * Time.deltaTime;
+
+            if (wait <= 0)
+            {
+                wait = 5;
+                EndAction(true);
+            }
+
+        }
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
