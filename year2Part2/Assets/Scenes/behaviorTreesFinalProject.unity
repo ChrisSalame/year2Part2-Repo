@@ -514,7 +514,7 @@ Transform:
   m_GameObject: {fileID: 1135918749}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.81, y: 1, z: -1.61}
+  m_LocalPosition: {x: 6.22, y: 1, z: 1.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -598,8 +598,8 @@ MonoBehaviour:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 270, y: 186}
-    _zoomFactor: 1
+    _translation: {x: 301, y: 204}
+    _zoomFactor: 0.75008994
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
@@ -846,7 +846,7 @@ Transform:
   m_GameObject: {fileID: 1929616303}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.7724147, y: 0.98, z: -3.3557932}
+  m_LocalPosition: {x: 0.37, y: 0.98, z: -6.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -865,7 +865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
-  _serializedBlackboard: '{"_variables":{"bugActive":{"_value":true,"_name":"bugActive","_id":"092f9751-9cd4-4910-835a-b7272a17e42d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+  _serializedBlackboard: '{"_variables":{"bugActive":{"_name":"bugActive","_id":"092f9751-9cd4-4910-835a-b7272a17e42d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"digStrength":{"_value":5.0,"_name":"digStrength","_id":"d851b826-af9a-4e74-82f7-668fd1fe5633","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"HP":{"_value":3.0,"_name":"HP","_id":"7a28c061-e861-4070-8eea-6647b95be99f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"velocity":{"_name":"velocity","_id":"7eaae1b4-0600-4754-8855-c562d2bfbe2b","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3,
@@ -874,7 +874,7 @@ MonoBehaviour:
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences: []
   _serializedVariables:
-  - _json: '{"_value":true,"_name":"bugActive","_id":"092f9751-9cd4-4910-835a-b7272a17e42d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+  - _json: '{"_name":"bugActive","_id":"092f9751-9cd4-4910-835a-b7272a17e42d","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
   - _json: '{"_value":5.0,"_name":"digStrength","_id":"d851b826-af9a-4e74-82f7-668fd1fe5633","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
