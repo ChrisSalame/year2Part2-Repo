@@ -7,6 +7,9 @@ namespace NodeCanvas.Tasks.Actions {
 
 	public class interactionInterestMoveAT : ActionTask {
 
+
+		//These are the variables needed to move around the character in random directions using the given navigateAT
+
 		public BBParameter<Vector3> acceleration;
 		public BBParameter<float> charSpeed;
 
@@ -28,6 +31,9 @@ namespace NodeCanvas.Tasks.Actions {
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
 
+
+			//Similar to dog movement this uses the navigate AT to move the character around. This will have the player object move
+			//around/shake when  Bug + dog interacton is triggered. The object will pick a random location around it and it will walk towards that direction
             DirectionChangeTime += Time.deltaTime;
             if (DirectionChangeTime > directionChange)
             {

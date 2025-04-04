@@ -24,6 +24,7 @@ namespace NodeCanvas.Tasks.Actions {
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
 
+			//Checks if bug spawn value is true, if it is and the condition was met in the previous CT the char will turn white again and regain his stats
             if (bugActive.value == true)
             {
                 digStrength.value = 5;

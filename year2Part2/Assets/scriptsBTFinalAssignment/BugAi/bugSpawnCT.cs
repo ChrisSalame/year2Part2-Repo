@@ -29,6 +29,8 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
 
+
+			//check if bug value is true
 			if (bugActive.value == true) 
 			{
 				Debug.Log("bugs Spawned");

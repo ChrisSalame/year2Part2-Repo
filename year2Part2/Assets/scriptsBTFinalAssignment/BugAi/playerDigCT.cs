@@ -34,6 +34,12 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
 
+
+			//Each time the player would dig they set 2 variables randomly, if the
+			//variables match then the bug value is turned to true and the variables are reset to prevent infinit loop bugs 
+
+			//--------------------------would like to add signifier for audio/ animation if possible--------------------------
+
             if (Input.GetKeyDown(KeyCode.Space)) 
 			{
                 bugSpawnRoll = Random.Range(0, 5);

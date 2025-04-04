@@ -20,6 +20,10 @@ namespace NodeCanvas.Tasks.Actions {
 		//Call EndAction() to mark the action as finished, either in success or failure.
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
+
+			//tells the player they dug into the ground
+
+			//---------------------------------if possible add in sound effect afterwards--------------------------------
 			dirtValue.value -= digStrength.value; 
 			Debug.Log("you dug in 5 more cm, value is now " + dirtValue.value); 
 			EndAction(true);

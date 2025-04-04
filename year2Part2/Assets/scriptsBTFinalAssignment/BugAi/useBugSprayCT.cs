@@ -25,6 +25,9 @@ namespace NodeCanvas.Tasks.Conditions {
 
 		//Called once per frame while the condition is active.
 		//Return whether the condition is success or failure.
+
+
+		//when player presses B they will use bug spray and condition returns true
 		protected override bool OnCheck() {
             if (Input.GetKeyDown(KeyCode.B))
             {

@@ -32,6 +32,8 @@ namespace NodeCanvas.Tasks.Conditions {
 		protected override bool OnCheck() {
 
 			//If the Hp is zero game over
+
+			//to be updated later
 			if (HP.value <= 0)
 			{
 				Debug.Log("GAME OVER");

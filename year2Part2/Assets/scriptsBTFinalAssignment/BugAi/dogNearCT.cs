@@ -30,6 +30,7 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
 
+			//measure distance from player character to dog
             float distanceToDog = Vector3.Distance(agent.transform.position, dog.position);
             return distanceToDog < radius;
         }
